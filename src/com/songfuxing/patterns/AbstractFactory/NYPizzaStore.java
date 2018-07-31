@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.AbstractFactory;
+package com.songfuxing.patterns.abstractFactory;
 
 /**
  * 具体子类负责pizza创建

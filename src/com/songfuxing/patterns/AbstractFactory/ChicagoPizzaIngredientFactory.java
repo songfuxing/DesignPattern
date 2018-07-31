@@ -1,14 +1,11 @@
-package com.songfuxing.patterns.AbstractFactory;
+package com.songfuxing.patterns.abstractFactory;
 
-import com.songfuxing.patterns.AbstractFactory.Ingredient.Cheese;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.ChicagoCheese;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.ChicagoDough;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.ChicagoSouce;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.Dough;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.NYCheese;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.NYDough;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.NYSouce;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.Souce;
+import com.songfuxing.patterns.abstractFactory.Ingredient.Cheese;
+import com.songfuxing.patterns.abstractFactory.Ingredient.ChicagoCheese;
+import com.songfuxing.patterns.abstractFactory.Ingredient.ChicagoDough;
+import com.songfuxing.patterns.abstractFactory.Ingredient.ChicagoSouce;
+import com.songfuxing.patterns.abstractFactory.Ingredient.Dough;
+import com.songfuxing.patterns.abstractFactory.Ingredient.Souce;
 
 /**
  * 原料工厂的具体实现，每个具体子类创建一个家族的产品，每种原料都是芝加哥的原料生产方式

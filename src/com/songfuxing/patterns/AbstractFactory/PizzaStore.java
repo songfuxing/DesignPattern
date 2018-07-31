@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.AbstractFactory;
+package com.songfuxing.patterns.abstractFactory;
 
 /**
  * 创建者类，它定义来一个抽象工厂方法(createPizza),让子类实现此方法制造产品。

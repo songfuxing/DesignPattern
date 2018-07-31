@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Singleton;
+package com.songfuxing.patterns.singleton;
 
 /**
  * 多线程时，初始化时多个线程同时进入getInstance方法，会生成多个实例.

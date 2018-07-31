@@ -1,10 +1,10 @@
-package com.songfuxing.patterns.AbstractFactory;
+package com.songfuxing.patterns.abstractFactory;
 
 import java.util.ArrayList;
 
-import com.songfuxing.patterns.AbstractFactory.Ingredient.Cheese;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.Dough;
-import com.songfuxing.patterns.AbstractFactory.Ingredient.Souce;
+import com.songfuxing.patterns.abstractFactory.Ingredient.Cheese;
+import com.songfuxing.patterns.abstractFactory.Ingredient.Dough;
+import com.songfuxing.patterns.abstractFactory.Ingredient.Souce;
 
 /**
  * 工厂生产的产品

@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Factory;
+package com.songfuxing.patterns.factory;
 
 import java.util.ArrayList;
 

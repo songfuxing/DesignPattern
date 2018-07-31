@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Singleton;
+package com.songfuxing.patterns.singleton;
 
 /**
  * Mutithreading的问题在于：如果getInstance频繁被调用，那么这个方法就会非常耗时。而且synchronized的意义在于第一次进入方法时保证单例对象正确创建，没有必要

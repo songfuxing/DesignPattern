@@ -1,6 +1,4 @@
-package com.songfuxing.patterns.Singleton;
-
-import sun.java2d.pipe.SpanShapeRenderer;
+package com.songfuxing.patterns.singleton;
 
 /**
  * Created by songfuxing on 2018/7/31.

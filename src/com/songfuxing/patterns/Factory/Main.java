@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Factory;
+package com.songfuxing.patterns.factory;
 
 /**
  * 定义了一个创建对象的接口，但由于子类决定要实例化哪一个类，工厂方法让类把实例化推迟到子类。

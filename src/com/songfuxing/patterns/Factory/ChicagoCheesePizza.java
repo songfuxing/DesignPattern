@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Factory;
+package com.songfuxing.patterns.factory;
 
 /**
  * 具体的产品

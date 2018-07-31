@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.AbstractFactory;
+package com.songfuxing.patterns.abstractFactory;
 
 
 /**

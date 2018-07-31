@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Singleton;
+package com.songfuxing.patterns.singleton;
 
 /**
  * Created by songfuxing on 2018/7/31.

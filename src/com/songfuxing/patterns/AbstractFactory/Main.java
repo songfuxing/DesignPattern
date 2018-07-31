@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.AbstractFactory;
+package com.songfuxing.patterns.abstractFactory;
 
 /**
  * 抽象工厂模式：用户创建依赖对象的家族，而不需要指明具体的类
