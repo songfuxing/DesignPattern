@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Template.Hook;
+package com.songfuxing.patterns.template.Hook;
 
 /**
  * 子类，实现算法

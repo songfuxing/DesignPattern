@@ -1,7 +1,7 @@
 package com.songfuxing.patterns.strategy.behavior;
 
 /**
- * Created by songfuxing on 2018/6/20.
+ * 所有飞行行为都要实现的接口
  */
 public interface FlyBehavior {
     public void fly();

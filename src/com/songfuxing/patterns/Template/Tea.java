@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Template;
+package com.songfuxing.patterns.template;
 
 /**
  * 子类，实现算法

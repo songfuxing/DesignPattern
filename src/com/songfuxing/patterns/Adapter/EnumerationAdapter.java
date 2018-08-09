@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.Adapter;
+package com.songfuxing.patterns.adapter;
 
 import java.util.Enumeration;
 import java.util.Iterator;
