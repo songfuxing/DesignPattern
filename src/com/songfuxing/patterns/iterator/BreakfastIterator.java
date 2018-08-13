@@ -1,9 +1,11 @@
 package com.songfuxing.patterns.iterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
- * Created by songfuxing on 2018/8/10.
+ * 被java的Iterator取代
+ * 迭代器模式：提供一种方法顺序访问一个聚合对象的各个元素，又不暴露元素的内部实现
  */
 public class BreakfastIterator implements Iterator {
     int menuPos = 0;

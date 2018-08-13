@@ -1,7 +1,11 @@
 package com.songfuxing.patterns.iterator;
 
+import java.util.Iterator;
+
 /**
- * Created by songfuxing on 2018/8/10.
+ * 统一菜单接口，简化使用；
+ * 所有的菜单必须实现Iterator方法
  */
 public interface Menu {
+    public Iterator createIterator();
 }
