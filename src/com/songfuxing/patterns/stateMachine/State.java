@@ -1,7 +1,11 @@
 package com.songfuxing.patterns.stateMachine;
 
 /**
- * Created by songfuxing on 2018/8/15.
+ * 所有状态的接口集合
  */
 public interface State {
+    public void insertQuarter();
+    public void ejectQuarter();
+    public void turnCrank();
+    public void dispense();
 }
