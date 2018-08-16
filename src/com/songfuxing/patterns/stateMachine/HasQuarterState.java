@@ -1,10 +1,13 @@
 package com.songfuxing.patterns.stateMachine;
 
+import java.util.Random;
+
 /**
  * 具体的状态实现，处理来自context类的请求
  */
 public class HasQuarterState implements State{
     GumballMachine gumballMachine;
+    Random random = new Random(System.currentTimeMillis());
 
     public HasQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
@@ -28,8 +31,14 @@ public class HasQuarterState implements State{
     public void turnCrank() {
         // 转动开关
         System.out.println("turn crank success");
-        // 下一个状态
-        gumballMachine.setState(gumballMachine.getSoldState());
+        // 下一个状态:  赢家或者普通状态
+        int winner = random.nextInt(10);
+        System.out.println("you get :" + winner);
+        if (winner < 5 && gumballMachine.count > 1) {
+            gumballMachine.setState(gumballMachine.getWinnerState());
+        } else {
+            gumballMachine.setState(gumballMachine.getSoldState());
+        }
     }
 
     @Override
