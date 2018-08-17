@@ -1,4 +1,4 @@
-package com.songfuxing.patterns.proxy.rmi;
+package com.songfuxing.patterns.proxy.remoteProxy;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
