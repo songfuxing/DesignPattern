@@ -47,11 +47,17 @@ public class ImageProxy implements Icon {
 
     @Override
     public int getIconWidth() {
-        return 0;
+        if (imageIcon != null) {
+            return imageIcon.getIconWidth();
+        }
+        return 800;
     }
 
     @Override
     public int getIconHeight() {
-        return 0;
+        if (imageIcon != null) {
+            return imageIcon.getIconHeight();
+        }
+        return 600;
     }
 }
