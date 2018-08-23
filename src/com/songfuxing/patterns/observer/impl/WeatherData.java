@@ -1,14 +1,11 @@
 package com.songfuxing.patterns.observer.impl;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Observable;
 
-import com.songfuxing.patterns.observer.Observer;
-import com.songfuxing.patterns.observer.Subject;
 
 /**
- * Created by songfuxing on 2018/6/22.
+ * 使用java的Observable接口，和主题功能类似。具有观察者注册/退订消息，通知观察者等功能。
+ * weatherdata是我们的subject, 称为observable.
  */
 public class WeatherData extends Observable {
     private float temperature;
@@ -32,6 +29,7 @@ public class WeatherData extends Observable {
     }
 
     public void messurementsChanged() {
+        // observable中只有当changed为true时才会通知用户。这样可以控制推送消息的粒度
         setChanged();
         notifyObservers();
     }

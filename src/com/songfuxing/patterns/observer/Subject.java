@@ -1,7 +1,7 @@
 package com.songfuxing.patterns.observer;
 
 /**
- * Created by songfuxing on 2018/6/22.
+ * 主题接口，对象使用此接口注册为观察者（订阅），或者从观察者队列中删除自己（退订）
  */
 public interface Subject {
     public void registerObservers(Observer observer);

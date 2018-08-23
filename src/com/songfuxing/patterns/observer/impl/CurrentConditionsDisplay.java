@@ -6,7 +6,8 @@ import java.util.Observer;
 import com.songfuxing.patterns.observer.Display;
 
 /**
- * Created by songfuxing on 2018/6/22.
+ * 观察者，可以主动的订阅/退订消息。
+ * 必须实现update方法，让主题调用
  */
 public class CurrentConditionsDisplay implements Observer, Display {
     private float temperature;
