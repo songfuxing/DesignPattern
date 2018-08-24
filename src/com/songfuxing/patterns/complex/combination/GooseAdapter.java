@@ -1,5 +1,7 @@
 package com.songfuxing.patterns.complex.combination;
 
+import java.util.Observer;
+
 /**
  * 适配器模式
  * 为了让鹅与鸭子对接口一致，改变鹅的接口
@@ -12,5 +14,15 @@ public class GooseAdapter implements Quackable {
 
     public void quack() {
         goose.honk();
+    }
+
+    @Override
+    public void registerObserver(Observer observer) {
+
+    }
+
+    @Override
+    public void notifyObservers() {
+
     }
 }

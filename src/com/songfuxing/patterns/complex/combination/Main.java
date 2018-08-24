@@ -21,7 +21,7 @@ public class Main {
         simulate(redheadDuck);
         simulate(gooseAdapter);
 
-        //-------------统计次数--------------------
+        //-------------装饰器模式，增加统计次数功能--------------------
         Quackable duckCall1 = new QuackCounter(new DuckCall());
         Quackable mallardDuck1 = new QuackCounter(new MallardDuck());
         Quackable redheadDuck1 = new QuackCounter(new RedheadDuck());
@@ -43,6 +43,24 @@ public class Main {
         simulate(mallardDuck2);
         simulate(redheadDuck2);
 
+
+        // --------使用组合处理各种子集-------------
+        Flock flock = new Flock();
+        flock.add(duckCall);
+        flock.add(mallardDuck);
+        flock.add(redheadDuck);
+        flock.add(gooseAdapter);
+
+        Flock flockOfMarllard = new Flock();
+        flockOfMarllard.add(mallardDuck);
+        flockOfMarllard.add(mallardDuck1);
+        flockOfMarllard.add(mallardDuck2);
+
+        flock.add(flockOfMarllard);
+
+        simulate(flock);
+
+        System.out.println(QuackCounter.getCount());
 
     }
 
