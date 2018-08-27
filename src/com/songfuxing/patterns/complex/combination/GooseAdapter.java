@@ -1,6 +1,5 @@
 package com.songfuxing.patterns.complex.combination;
 
-import java.util.Observer;
 
 /**
  * 适配器模式
