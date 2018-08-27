@@ -7,6 +7,13 @@ import java.util.ArrayList;
  */
 public class Flock implements Quackable {
     ArrayList<Quackable> quackers = new ArrayList();
+
+    ObservableProxy proxy;
+
+    public Flock() {
+        this.proxy = new ObservableProxy(this);
+    }
+
     public void add(Quackable quackable) {
         quackers.add(quackable);
     }
@@ -15,5 +22,15 @@ public class Flock implements Quackable {
         for (Quackable quacker: quackers) {
             quacker.quack();
         }
+    }
+
+    @Override
+    public void registerObserver(Observer observer) {
+        proxy.registerObserver(observer);
+    }
+
+    @Override
+    public void notifyObservers() {
+        proxy.notifyObservers();
     }
 }
