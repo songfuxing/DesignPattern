@@ -9,6 +9,10 @@ public class ObservableProxy implements QuackObservable{
     ArrayList<Observer> observers = new ArrayList();
     QuackObservable data;
 
+    public ObservableProxy(QuackObservable observable) {
+        data = observable;
+    }
+
     @Override
     public void registerObserver(Observer observer) {
         observers.add(observer);

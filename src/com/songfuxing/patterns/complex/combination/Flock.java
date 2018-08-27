@@ -26,11 +26,15 @@ public class Flock implements Quackable {
 
     @Override
     public void registerObserver(Observer observer) {
-        proxy.registerObserver(observer);
+        for (Quackable quacker: quackers) {
+            quacker.registerObserver(observer);
+        }
     }
 
     @Override
     public void notifyObservers() {
-        proxy.notifyObservers();
+        for (Quackable quacker: quackers) {
+            quacker.notifyObservers();
+        }
     }
 }

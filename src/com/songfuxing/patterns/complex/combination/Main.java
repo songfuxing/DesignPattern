@@ -62,6 +62,16 @@ public class Main {
 
         System.out.println(QuackCounter.getCount());
 
+        // ----------观察者：监控特定的对象
+        System.out.println("-------observer:-------");
+        // observer
+        Quackologist quackologist = new Quackologist();
+        // flock => observable
+         flock.registerObserver(quackologist);
+
+        simulate(flock);
+        System.out.println(QuackCounter.getCount());
+
     }
 
     void simulate(Quackable duck) {

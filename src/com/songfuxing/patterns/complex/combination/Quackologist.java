@@ -6,6 +6,6 @@ package com.songfuxing.patterns.complex.combination;
 public class Quackologist implements Observer{
     @Override
     public void update(QuackObservable observable) {
-        System.out.println(observable);
+        System.out.println("quackologist recieve data:" + observable);
     }
 }
